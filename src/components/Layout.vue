@@ -1,9 +1,9 @@
 <template>
   <div>
-    <Header v-if="isMobile && !isChild" />
-    <Navigator v-else />
+    <Navigator  v-if="isMobile && isChild" />
+    <Header v-else />
     <div class="layout container">
-      <div class="layout-left" v-if="isMobile && !isChild">
+      <div class="layout-left" v-if="!isMobile || !isChild">
         <Sidebar />
       </div>
       <div class="layout-right">
