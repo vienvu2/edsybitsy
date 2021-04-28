@@ -53,6 +53,8 @@ body {
     padding-bottom: 23px;
     background: #FFFFFF;
     box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.08);
+    position: relative;
+    z-index: 100;
 
     .logo {
         height: 49px;
@@ -70,6 +72,7 @@ body {
     background: white;
     height: 100%;
     min-height: calc(100vh - 100px);
+    z-index: 50;
 
     &-user {
         margin-left: 26px;
@@ -498,6 +501,318 @@ body {
     }
 }
 
+
+.login {
+    background: #D7ECFF;
+    min-height: calc(100vh - 100px);
+    padding-bottom: 40px;
+    padding-top: 40px;
+
+    &-form {
+        width: 815px;
+        max-width: 96%;
+        background: #FFFFFF;
+        box-shadow: 2px 2px 12px 4px rgba(0, 0, 0, 0.06);
+        border-radius: 20px;
+        margin: 0 auto;
+        padding: 45px 77px;
+    }
+
+    &-tabs {
+        display: flex;
+    }
+
+    &-tab {
+        margin-right: 33px;
+        font-weight: 600;
+        font-size: 26px;
+        line-height: 22px;
+        color: #BDBDBD;
+        padding: 10px 0;
+        cursor: pointer;
+
+        &:hover,
+        &.active {
+            color: #1890FF;
+            border-bottom: 1px solid #1890FF;
+        }
+    }
+
+    .btn.btn-google {
+        height: 60px;
+        border: 1px solid #5F5F5F;
+        box-sizing: border-box;
+        border-radius: 14px;
+        display: block;
+        width: 100%;
+
+        margin-top: 50px;
+
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 22px;
+
+
+        color: #5F5F5F;
+    }
+
+    &-or {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 22px;
+        color: #BDBDBD;
+        position: relative;
+        background: white;
+        text-align: center;
+        margin-top: 28px;
+
+        &:before {
+            content: "";
+            position: absolute;
+            top: 12px;
+            margin-left: -40px;
+            height: 1px;
+            width: 34px;
+            background: #BDBDBD;
+        }
+
+        &:after {
+            content: "";
+            position: absolute;
+            top: 12px;
+            margin-left: 5px;
+            height: 1px;
+            width: 34px;
+            background: #BDBDBD;
+        }
+    }
+
+    label {
+        margin-top: 25px;
+
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 22px;
+        color: #868686;
+        display: block;
+
+    }
+
+    input {
+        margin-top: 12px;
+        display: block;
+        border: 1px solid #868686;
+        border-radius: 14px;
+        height: 60px;
+        width: 100%;
+        font-weight: 500;
+        font-size: 22px;
+        line-height: 22px;
+        padding-left: 22px;
+
+        &:focus {
+            background: #F7FBFF;
+            border: 1px solid #1890FF;
+            outline: 0;
+        }
+    }
+
+    a {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 22px;
+        color: #1890FF;
+        cursor: pointer;
+    }
+
+    p {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;
+        color: #BDBDBD;
+
+    }
+
+    .btn.btn-login {
+        margin-top: 54px;
+        height: 60px;
+        background: #1890FF;
+        border-radius: 14px;
+        width: 100%;
+        display: block;
+        border: 0;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 22px;
+        color: #FFFFFF;
+        cursor: pointer;
+    }
+}
+
+.verify {
+    background: #D7ECFF;
+    min-height: calc(100vh - 100px);
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+    &-form {
+        width: 537px;
+        max-width: 96%;
+        background: #FFFFFF;
+        box-shadow: 2px 2px 12px 4px rgba(0, 0, 0, 0.06);
+        text-align: center;
+        border-radius: 20px;
+        padding: 45px 77px;
+        margin: 0px auto;
+    }
+
+    h3 {
+
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 22px;
+        color: #3E3E3E;
+        margin-top: 46px;
+        margin-bottom: 55px;
+    }
+
+    p {
+
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;
+        color: #868686;
+        margin-bottom: 15px;
+    }
+
+    h4 {
+
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 22px;
+        color: #5F5F5F;
+        margin-bottom: 17px;
+    }
+
+    a {
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 22px;
+        color: #5F5F5F;
+        margin-top: 73px;
+        display: block;
+    }
+
+    button {
+        margin-top: 29px;
+        display: block;
+        height: 60px;
+        background: #1890FF;
+        border-radius: 14px;
+        width: 100%;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 22px;
+        color: #FFFFFF;
+        border: 0;
+        cursor: pointer;
+
+        &:focus,
+        &:active {
+            outline: none;
+        }
+
+    }
+
+}
+
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.3);
+    display: none;
+    padding-top: 200px;
+    z-index: 75;
+
+    &.show {
+        display: block;
+    }
+
+    &-content {
+        width: 537px;
+        background: #FFFFFF;
+        box-shadow: 2px 2px 12px 4px rgba(0, 0, 0, 0.06);
+        border-radius: 20px;
+        margin: 0 auto;
+        text-align: center;
+        padding: 60px;
+        padding-bottom: 90px;
+        position: relative;
+
+        p {
+
+            font-weight: 500;
+            font-size: 26px;
+            line-height: 22px;
+            margin-bottom: 27px;
+            color: #5F5F5F;
+
+        }
+
+        h3 {
+
+            font-weight: 600;
+            font-size: 32px;
+            line-height: 22px;
+            margin-bottom: 33px;
+            color: #3E3E3E;
+        }
+
+        h6 {
+
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 25px;
+
+            color: #5F5F5F;
+        }
+
+        button {
+            margin-top: 29px;
+            display: block;
+            height: 60px;
+            background: #1890FF;
+            border-radius: 14px;
+            width: 100%;
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 22px;
+            color: #FFFFFF;
+            border: 0;
+            cursor: pointer;
+
+            &:focus,
+            &:active {
+                outline: none;
+            }
+
+        }
+    }
+
+    &-close {
+        position: absolute;
+        top: 25px;
+        right: 25px;
+    }
+
+    &-banner {
+        width: 335px;
+    }
+}
+
 @media only screen and (max-width: 679px) {
     .layout {
         display: block;
@@ -909,227 +1224,154 @@ body {
         }
 
     }
-}
 
-.login {
-    background: #D7ECFF;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: calc(100vh - 100px);
+    .login {
+        padding: 0;
 
-    &-form {
-        width: 815px;
-        max-width: 96%;
-        background: #FFFFFF;
-        box-shadow: 2px 2px 12px 4px rgba(0, 0, 0, 0.06);
-        border-radius: 20px;
-        padding: 45px 77px;
-    }
+        &-form {
+            width: 100%;
+            max-width: 100%;
+            border-radius: 0;
+            box-shadow: none;
+            padding: 26px 23px;
+            min-height: calc(100vh - 68px);
+        }
 
-    &-tabs {
-        display: flex;
-    }
+        &-tab {
+            font-size: 18px;
+            line-height: 22px;
+            margin-right: 27px;
+        }
 
-    &-tab {
-        margin-right: 33px;
-        font-weight: 600;
-        font-size: 26px;
-        line-height: 22px;
-        color: #BDBDBD;
-        padding: 10px 0;
-        cursor: pointer;
+        .btn.btn-login,
+        .btn.btn-google {
 
-        &:hover,
-        &.active {
-            color: #1890FF;
-            border-bottom: 1px solid #1890FF;
+            height: 42px;
+            border-radius: 12px;
+
+            font-size: 16px;
+            line-height: 22px;
+        }
+
+        .btn.btn-login {
+            margin-top: 34px;
+        }
+
+        label {
+
+            font-size: 16px;
+            line-height: 22px;
+        }
+
+        input {
+
+            height: 42px;
+            border-radius: 12px;
+
+            font-size: 14px;
+            line-height: 22px;
+        }
+
+        a,
+        p {
+
+            font-size: 16px;
+            line-height: 22px;
         }
     }
 
-    .btn.btn-google {
-        height: 60px;
-        border: 1px solid #5F5F5F;
-        box-sizing: border-box;
-        border-radius: 14px;
-        display: block;
-        width: 100%;
+    .verify {
+        padding: 0;
 
-        margin-top: 50px;
+        &-form {
+            width: 100%;
+            max-width: 100%;
+            border-radius: 0;
+            box-shadow: none;
+            padding: 26px 23px;
+            min-height: calc(100vh - 68px);
 
-        font-weight: 600;
-        font-size: 20px;
-        line-height: 22px;
+            img {
+                width: 80px;
+            }
 
+            h3 {
 
-        color: #5F5F5F;
-    }
+                font-size: 22px;
+                line-height: 22px;
+                margin-bottom: 30px;
+            }
 
-    &-or {
-        font-weight: 600;
-        font-size: 18px;
-        line-height: 22px;
-        color: #BDBDBD;
-        position: relative;
-        background: white;
-        text-align: center;
-        margin-top: 28px;
+            p {
 
-        &:before {
-            content: "";
-            position: absolute;
-            top: 12px;
-            margin-left: -40px;
-            height: 1px;
-            width: 34px;
-            background: #BDBDBD;
-        }
+                font-size: 14px;
+                line-height: 22px;
+                margin-bottom: 6px;
+            }
 
-        &:after {
-            content: "";
-            position: absolute;
-            top: 12px;
-            margin-left: 5px;
-            height: 1px;
-            width: 34px;
-            background: #BDBDBD;
-        }
-    }
+            h4 {
 
-    label {
-        margin-top: 25px;
+                font-size: 18px;
+                line-height: 22px;
+            }
 
-        font-weight: 600;
-        font-size: 18px;
-        line-height: 22px;
-        color: #868686;
-        display: block;
+            a {
 
-    }
+                font-size: 18px;
+                line-height: 22px;
+                margin-top: 55px;
+            }
 
-    input {
-        margin-top: 12px;
-        display: block;
-        border: 1px solid #868686;
-        border-radius: 14px;
-        height: 60px;
-        width: 100%;
-        font-weight: 500;
-        font-size: 22px;
-        line-height: 22px;
-        padding-left: 22px;
+            button {
 
-        &:focus {
-            background: #F7FBFF;
-            border: 1px solid #1890FF;
-            outline: 0;
+                height: 42px;
+                border-radius: 12px;
+
+                font-size: 16px;
+                line-height: 22px;
+            }
         }
     }
 
-    a {
-        font-weight: 600;
-        font-size: 18px;
-        line-height: 22px;
-        color: #1890FF;
-        cursor: pointer;
-    }
+    .popup {
+        padding-top: 100px;
+        &-content {
+            padding: 33px;
+            width: calc(100% - 48px);
 
-    p {
-        font-weight: 500;
-        font-size: 18px;
-        line-height: 22px;
-        color: #BDBDBD;
+            p {
 
-    }
+                font-size: 18px;
+                margin-bottom: 17px;
+                line-height: 22px;
+            }
 
-    .btn.btn-login {
-        margin-top: 54px;
-        height: 60px;
-        background: #1890FF;
-        border-radius: 14px;
-        width: 100%;
-        display: block;
-        border: 0;
-        font-weight: 600;
-        font-size: 20px;
-        line-height: 22px;
-        color: #FFFFFF;
-        cursor: pointer;
-    }
-}
+            h3 {
 
-.verify {
-    background: #D7ECFF;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: calc(100vh - 100px);
+                font-size: 22px;
+                line-height: 22px;
+                margin-bottom: 23px;
+            }
 
-    &-form {
-        width: 537px;
-        max-width: 96%;
-        background: #FFFFFF;
-        box-shadow: 2px 2px 12px 4px rgba(0, 0, 0, 0.06);
-        text-align: center;
-        border-radius: 20px;
-        padding: 45px 77px;
-    }
+            h6 {
 
-    h3 {
+                font-size: 14px;
+                line-height: 19px;
+                margin-bottom: 47px;
+            }
 
-        font-weight: 600;
-        font-size: 32px;
-        line-height: 22px;
-        color: #3E3E3E;
-        margin-top: 46px;
-        margin-bottom: 55px;
-    }
+            button {
 
-    p {
+                height: 42px;
+                border-radius: 12px;
 
-        font-weight: 500;
-        font-size: 18px;
-        line-height: 22px;
-        color: #868686;
-        margin-bottom: 15px;
-    }
-
-    h4 {
-
-        font-weight: 600;
-        font-size: 22px;
-        line-height: 22px;
-        color: #5F5F5F;
-        margin-bottom: 17px;
-    }
-
-    a {
-        font-weight: 600;
-        font-size: 20px;
-        line-height: 22px;
-        color: #5F5F5F;
-        margin-top: 73px;
-        display: block;
-    }
-
-    button {
-        margin-top: 29px;
-        display: block;
-        height: 60px;
-        background: #1890FF;
-        border-radius: 14px;
-        width: 100%;
-        font-weight: 600;
-        font-size: 20px;
-        line-height: 22px;
-        color: #FFFFFF;
-        border: 0;
-        cursor: pointer;
-        &:focus,
-        &:active{
-            outline: none;
+                font-size: 16px;
+                line-height: 22px;
+            }
         }
 
+        &-banner {
+            width: 221px;
+        }
     }
-
 }

@@ -9,7 +9,7 @@
             :class="{ active: tabActive == 'login' }"
             @click="tabActive = 'login'"
           >
-            Login
+            Log in
           </div>
           <div
             class="login-tab"
