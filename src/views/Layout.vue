@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Navigator  v-if="isMobile && isChild" />
+    <Navigator v-if="isMobile && isChild" />
     <Header v-else />
     <div class="layout container">
       <div class="layout-left" v-if="!isChild">
@@ -13,9 +13,9 @@
   </div>
 </template>
 <script>
-import Header from "./Header";
-import Sidebar from "./Sidebar";
-import Navigator from "./Navigator";
+import Header from "./../components/Header";
+import Sidebar from "./../components/Sidebar";
+import Navigator from "./../components/Navigator";
 export default {
   components: { Header, Sidebar, Navigator },
   computed: {

@@ -2,13 +2,14 @@
   <div class="header">
     <div class="container">
       <div class="logo">
-      <img src="/img/logo.png" />
+        <a href="/">
+          <img src="/img/logo.png" />
+        </a>
       </div>
     </div>
   </div>
 </template>
 
 <script>
-export default {
-};
+export default {};
 </script>
