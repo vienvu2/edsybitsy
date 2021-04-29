@@ -734,11 +734,12 @@ body {
     bottom: 0;
     background: rgba(0, 0, 0, 0.3);
     display: none;
-    padding-top: 200px;
     z-index: 75;
+    align-items: center;
+    justify-content: center;
 
     &.show {
-        display: block;
+        display: flex;
     }
 
     &-content {
