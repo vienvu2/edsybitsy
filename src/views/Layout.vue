@@ -3,7 +3,7 @@
     <Navigator v-if="isMobile && isChild" />
     <Header v-else />
     <div class="layout container">
-      <div class="layout-left" v-if="!isChild">
+      <div class="layout-left" v-if="!isChild || !isMobile">
         <Sidebar />
       </div>
       <div class="layout-right">
